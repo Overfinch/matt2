@@ -2,6 +2,8 @@
 
 // Добавил commit через Github Desctop
 
+
+
 interface Chargable{
     public function getPrice();
 }
@@ -191,5 +193,5 @@ echo "<br>";
 echo $product2->getSummaryLine();
 echo "<br>";
 echo $product3->getSummaryLine();
-echo "<br>";
+echo "<hr>";
 
