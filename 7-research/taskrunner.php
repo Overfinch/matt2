@@ -1,10 +1,10 @@
 <?php
 
-$classname = "Task";
+$classname = "Task"; // имя класса который подключим
 
-require_once($classname.".php");
+require_once($classname.".php"); // подключаем файл с нужным нам классом
 
-$classname = "tasks\\".$classname;
+$classname = "tasks\\".$classname; // формируем имя класса с учетом пространства имён
 
-$myObj = new $classname();
+$myObj = new $classname(); 
 $myObj->doSpeak();

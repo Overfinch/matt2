@@ -2,7 +2,7 @@
 
 namespace tasks;
 
-class Task{
+class Task{ // класс который мы подключим к основному коду
     function doSpeak(){
         print "Привет";
     }
