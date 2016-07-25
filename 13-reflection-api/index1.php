@@ -1,7 +1,5 @@
 <?php
 
-echo "Hello";
-
 echo "<pre>";
 require_once("../index.php");
 

@@ -194,3 +194,4 @@ echo $product2->getSummaryLine();
 echo "<br>";
 echo $product3->getSummaryLine();
 echo "<hr>";
+
