@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf>
+            <item name="user">Bob</item>
+            <item name="pass">newpass</item>
+            <item name="host">localhost</item>
+            <item name="active">0</item>
+            <item name="new">1</item>
+</conf>
