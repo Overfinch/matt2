@@ -1,5 +1,7 @@
 <?php
 
+// Добавил commit через Github Desctop
+
 interface Chargable{
     public function getPrice();
 }
