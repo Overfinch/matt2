@@ -1,5 +1,7 @@
 <?php
 
+// ращбираем некоторые методы класса ReflectionClass
+
 echo "<pre>";
 require_once("../index.php");
 
