@@ -1,6 +1,6 @@
 <?php
 
-// ращбираем некоторые методы класса ReflectionClass
+// исследования классов класса ReflectionClass
 
 echo "<pre>";
 require_once("../index.php");

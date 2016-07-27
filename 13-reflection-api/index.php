@@ -1,5 +1,7 @@
 <?php
 
+// Исследования классов с помощью Reflection Api
+
 require_once("../index.php");
 
 $reflection = new ReflectionClass("CDProduct"); // создаём обьект класса ReflectionClass с классом Person

@@ -1,6 +1,7 @@
 <?php
 
 // с помощью Reflection API получаем исходный код класса
+
 echo "<pre>";
 require_once ('../index.php');
 
@@ -18,4 +19,5 @@ class ReflectionUtil {
 
 $class = new ReflectionClass("CDProduct");
 print ReflectionUtil::getClassSource($class);
+
 echo "</pre>";
