@@ -33,13 +33,29 @@ function methodData(ReflectionMethod $method){
         $data .= "$name -- private метод<br> ";
     }
 
+    if($method->isStatic()){
+        $data .= "$name -- статичный метод<br> ";
+    }
+
+    if($method->isFinal()){
+        $data .= "$name -- финальный метод<br> ";
+    }
+
+    if($method->isConstructor()){
+        $data .= "$name -- метод конструктор<br> ";
+    }
+
+    if($method->returnsReference()){
+        $data .= "$name -- метод возвращает сслыку а не значение<br> ";
+    }
+
     return $data;
 }
 
 $prod_class = new ReflectionClass("CDProduct"); // поучаем обьект класса ReflectionClass для CDProduct
 $methods = $prod_class->getMethods(); // получаем все методы класса CDProduct
 
-foreach ($methods as $method) { 
+foreach ($methods as $method) {
     print methodData($method);
     print "<hr>";
 }
