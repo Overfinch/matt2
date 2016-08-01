@@ -61,7 +61,7 @@ class Conf {
             $this->lastmatch[0] = $value;
             return;
         }
-        $this->xml->addChild('item', $value)->addAttribute('name', $key);
+        //$this->xml->addChild('item', $value)->addAttribute('name', $key);
     }
 
     public function write(){

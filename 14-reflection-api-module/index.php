@@ -24,7 +24,7 @@ class FtpModule implements Module{
     }
 
     public function execute(){
-        // выполнение
+        print "FtpModule execute<br>";
     }
 }
 
@@ -34,7 +34,7 @@ class PersonModule implements Module{
     }
 
     public function execute(){
-        // выполнение
+        print "PersonModule execute<br>";
     }
 }
 
@@ -84,9 +84,16 @@ class ModuleRunner{
         }
     }
 
+    public function execute(){ // посе того как мы всё подключили и передали нужные аргументы, просто вызываем execute
+        foreach ($this->modules as $module){
+            $module->execute();
+        }
+    }
+
 }
 
 $runner = new ModuleRunner();
 $runner->init();
+$runner->execute();
 
 echo "</pre>";
