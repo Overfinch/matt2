@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<list>
+    <games>
+
+    <game name="GTA"> <name>Gta</name><ganre>action</ganre><developer>Rockstar</developer></game><game name="Witcher"> <name>Witcher</name><ganre>RPG</ganre><developer>CD project</developer></game></games>
+</list>
