@@ -44,8 +44,8 @@ function createNods($game, $params){
 
 
 $file = "config.xml"; // путь к файлу
-$params = ['name' => 'Witcher', "ganre" => "RPG", "developer" => "CD project", "persons" => ["main_hero" => "Geralt", "secondary_hero" => "Ciry"]]; // параметры
-$gameName = "Witcher"; // имя
+$params = ['name' => 'Witcher', "ganre" => "RPG", "developer" => "CD project", "persons" => ["main_hero" => "Geralt", "secondary_hero" => "Ciry","thirdly_heroes" => ["bard" => "Lyutik", "teacher" => "Vesemir", "dwarf" => "Zolton", "spy" => "Roshe"]]]; // параметры
+$gameName = "Witcher2"; // имя
 
 writeParams($file,$params,$gameName);
 $output = readParams($file);

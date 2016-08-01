@@ -1,6 +1,34 @@
 <?xml version="1.0"?>
 <list>
     <games>
-
-    <game name="GTA"> <name>Gta</name><ganre>action</ganre><developer>Rockstar</developer></game><game name="Witcher"> <name>Witcher</name><ganre>RPG</ganre><developer>CD project</developer><persons> <main_hero>Geralt</main_hero><secondary_hero>Ciry</secondary_hero></persons></game></games>
+        <game name="GTA">
+            <name>Gta</name>
+            <ganre>action</ganre>
+            <developer>Rockstar</developer>
+        </game>
+        <game name="Witcher">
+            <name>Witcher</name>
+            <ganre>RPG</ganre>
+            <developer>CD project</developer>
+            <persons>
+                <main_hero>Geralt</main_hero>
+                <secondary_hero>Ciry</secondary_hero>
+            </persons>
+        </game>
+        <game name="Witcher2">
+            <name>Witcher</name>
+            <ganre>RPG</ganre>
+            <developer>CD project</developer>
+            <persons>
+                <main_hero>Geralt</main_hero>
+                <secondary_hero>Ciry</secondary_hero>
+                <thirdly_heroes>
+                    <bard>Lyutik</bard>
+                    <teacher>Vesemir</teacher>
+                    <dwarf>Zolton</dwarf>
+                    <spy>Roshe</spy>
+                </thirdly_heroes>
+            </persons>
+        </game>
+    </games>
 </list>
