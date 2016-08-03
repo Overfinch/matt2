@@ -106,10 +106,7 @@ class CDProduct extends ShopProduct {
     public function getPlayLength(){
         return $this->playLength;
     }
-
-    public function __iterator_to_array(){
-        return '123';
-    }
+    
 
     public function getSummaryLine(){
         $base = parent::getSummaryLine();
