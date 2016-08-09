@@ -31,7 +31,3 @@ class Person {
 $person = new Person();
 echo $person->name;
 echo $person->getAge();
-
-echo "<pre>";
-var_dump($_SERVER);
-echo "</pre>";
