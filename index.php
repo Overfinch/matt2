@@ -177,6 +177,7 @@ class TextProductWriter extends ShopProductWriter {
 
 
 $pdo = new PDO('mysql:host=localhost;dbname=matt2','root',''); // инициализируем PDO
+$pdo->query("SET NAMES utf8");
 
 $product1 = new CDProduct("Harakiri", "Tankian", "Serj", 100, 90); // создали объект вручную
 $product2 = new BookProduct("Пикник на обочине", "Стругацкий", "Борис", 200, 300); // создали объект вручную
@@ -191,4 +192,3 @@ echo $product2->getSummaryLine();
 echo "<br>";
 echo $product3->getSummaryLine();
 echo "<hr>";
-
