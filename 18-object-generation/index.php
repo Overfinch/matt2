@@ -3,12 +3,12 @@
 
 abstract class Employee {
     protected $name;
-    private static $types = ['Minion','WellConnected','CluedUp'];
+    private static $types = ['Minion','WellConnected','CluedUp']; // типы дочерних классов
 
     static function recruit($name){
         $num = mt_rand(0, count(self::$types)-1);
         $type = self::$types[$num];
-        return new $type($name);
+        return new $type($name);  // возвращаем экземпляр рандомного дочернего класса
     }
 
     public function __construct($name){

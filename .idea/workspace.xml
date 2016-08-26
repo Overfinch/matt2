@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a5017d5-120e-4195-b2eb-d72adcdd5f32" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_git.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/18-object-generation/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test4.php" afterPath="$PROJECT_DIR$/test4.php" />
     </list>
     <ignored path="matt2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,22 +24,22 @@
     <favorites_list name="matt2" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/15-procedural-vs-oop/index.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="test4.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test4.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="1458">
+              <caret line="54" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index2.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/15-procedural-vs-oop/index2.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/18-object-generation/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="10" column="85" selection-start-line="10" selection-start-column="85" selection-end-line="10" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -66,7 +68,6 @@
         <option value="$PROJECT_DIR$/3-interception-methods/index3.php" />
         <option value="$PROJECT_DIR$/3-interception-methods/index4.php" />
         <option value="$PROJECT_DIR$/3-interception-methods/index5.php" />
-        <option value="$PROJECT_DIR$/test4.php" />
         <option value="$PROJECT_DIR$/5-namespaces/useful/Outputer.php" />
         <option value="$PROJECT_DIR$/5-namespaces/index.php" />
         <option value="$PROJECT_DIR$/6-package/index.php" />
@@ -98,6 +99,8 @@
         <option value="$PROJECT_DIR$/15-procedural-vs-oop/index.php" />
         <option value="$PROJECT_DIR$/15-procedural-vs-oop/index2.php" />
         <option value="$PROJECT_DIR$/test_git.php" />
+        <option value="$PROJECT_DIR$/test4.php" />
+        <option value="$PROJECT_DIR$/18-object-generation/index.php" />
       </list>
     </option>
   </component>
@@ -112,10 +115,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -162,12 +165,26 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="matt2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="matt2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="18-object-generation" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_624c8416ee51e205b3f892d1d904e06e6f3c57c8/cmd/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../oop" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -269,17 +286,22 @@
       <workItem from="1470416840950" duration="52000" />
       <workItem from="1470417341222" duration="313000" />
       <workItem from="1470417685655" duration="192000" />
+      <workItem from="1472130968262" duration="619000" />
+      <workItem from="1472199734434" duration="79000" />
+      <workItem from="1472199914287" duration="499000" />
+      <workItem from="1472203725915" duration="4148000" />
+      <workItem from="1472209310672" duration="70000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64547000" />
+    <option name="totallyTimeSpent" value="69962000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.170625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14166667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -317,7 +339,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/htdocs/htdocs/oop/index.php" />
     <entry file="file://D:/htdocs/htdocs/oop/Traits/index2.php" />
     <entry file="file://D:/htdocs/htdocs/oop/Traits/index.php" />
     <entry file="file://D:/htdocs/htdocs/oop/matt/index.php" />
@@ -424,13 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5-namespaces/useful/Outputer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -499,13 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1482">
-          <caret line="195" column="12" selection-start-line="195" selection-start-column="12" selection-end-line="195" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -602,14 +609,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/15-procedural-vs-oop/index1.php" />
-    <entry file="file://$PROJECT_DIR$/15-procedural-vs-oop/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/15-procedural-vs-oop/params.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -624,11 +623,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_git.php">
+    <entry file="file://$PROJECT_DIR$/test_git.php" />
+    <entry file="file://$PROJECT_DIR$/15-procedural-vs-oop/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="54">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -636,6 +635,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+          <folding>
+            <marker date="1472130893237" expanded="true" signature="1530:1563" ph="SELECT * FRO... products" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="54" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/18-object-generation/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="85" selection-start-line="10" selection-start-column="85" selection-end-line="10" selection-end-column="85" />
           <folding />
         </state>
       </provider>
