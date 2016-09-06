@@ -1,6 +1,6 @@
 <?php
 
-// Реализация шаблона Factory Method
+// Реализация шаблона Factory Method и Abstract Factory
 
 abstract class ApptEncoder {
     abstract function encode();
@@ -41,8 +41,10 @@ class MegaContactEncoder extends ContactEncoder {
 abstract class CommsManager {
     abstract function getHeaderText();
     abstract function getFooterText();
+    /* Здесь описан Factory Method (методы которые создадут экземпляры нужных классов) */
     abstract function getApptEncoder();
     abstract function getContactEncoder();
+    /*---------------------------------------------------------------------------------*/
 }
 
 class BlogsCommsManager extends CommsManager {
