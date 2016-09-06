@@ -18,10 +18,31 @@ class MegaApptEncoder extends ApptEncoder {
     }
 }
 
+/*------------------------------------------------------------------------------*/
+
+abstract class ContactEncoder {
+    abstract function encode();
+}
+
+class BlogsContactEncoder extends ContactEncoder {
+    function encode(){
+        return "Данные о контактах закодированы в формате BlogsCall";
+    }
+}
+
+class MegaContactEncoder extends ContactEncoder {
+    function encode(){
+        return "Данные о контактах закодированы в формате Megacall";
+    }
+}
+
+/*------------------------------------------------------------------------------*/
+
 abstract class CommsManager {
     abstract function getHeaderText();
     abstract function getFooterText();
     abstract function getApptEncoder();
+    abstract function getContactEncoder();
 }
 
 class BlogsCommsManager extends CommsManager {
@@ -35,6 +56,10 @@ class BlogsCommsManager extends CommsManager {
 
     function getApptEncoder(){
         return new BlogsApptEncoder();
+    }
+
+    function getContactEncoder(){
+        return new BlogsContactEncoder();
     }
 }
 
@@ -50,6 +75,10 @@ class MegaCommsManager extends CommsManager {
     function getApptEncoder(){
         return new MegaApptEncoder();
     }
+
+    function getContactEncoder(){
+        return new MegaContactEncoder();
+    }
 }
 
 // Если нам надо будет добавить новые дочерние классы для CommsManager или ApptEncoder
@@ -61,7 +90,8 @@ class MegaCommsManager extends CommsManager {
 $blogManager = new BlogsCommsManager();
 print $blogManager->getHeaderText();
 print $blogManager->getFooterText();
-print $blogManager->getApptEncoder()->encode(); // тут мы получаем объект типа ApptEncoder или его наследников
+print $blogManager->getApptEncoder()->encode();
+print $blogManager->getContactEncoder()->encode();// тут мы получаем объект типа ApptEncoder или его наследников
                                                 // (в данном случае BlogsApptEncoder), нам не обязательно знать какой именно
                                                 // подкласс будет веозвращен, главное что мы уверены что он наследник ApptEncoder
                                                 // в дальнейшем мы можем добавить новые дочерние классы которые будут расширять ApptEncoder
