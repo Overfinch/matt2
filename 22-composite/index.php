@@ -7,7 +7,7 @@ abstract class Unit {
     abstract function removeUnit(Unit $unit);
 }
 
-class Archer extends Unit {
+class Archer extends Unit { // листья
     function addUnit(Unit $unit){}
     function removeUnit(Unit $unit){}
 
@@ -16,7 +16,7 @@ class Archer extends Unit {
     }
 }
 
-class LaserCannonUnit extends Unit {
+class LaserCannonUnit extends Unit { // листья
     function addUnit(Unit $unit){}
     function removeUnit(Unit $unit){}
 
@@ -25,23 +25,23 @@ class LaserCannonUnit extends Unit {
     }
 }
 
-class Army extends Unit{
+class Army extends Unit{ // композит который может в себе объекты типа Unit
     private $units = [];
     private $armies = [];
 
-    function addUnit(Unit $unit){
+    function addUnit(Unit $unit){ // добавление объекта типа Unit
         array_push($this->units, $unit);
     }
 
-    function removeUnit(Unit $unit){
+    function removeUnit(Unit $unit){ // удаление объекта типа Unit
         $this->units = array_udiff($this->units, [$unit], function($a,$b){return ($a === $b)?0:1; });
     }
 
-    function addArmy(Army $army){
+    function addArmy(Army $army){ // добавление объекта типа Army
         array_push($this->armies, $army);
     }
 
-    function bombardStrength(){
+    function bombardStrength(){ // возвращает силу всех Unit и Army объектов, которые находятся в нём
         $ret = 0;
         foreach ($this->units as $unit){
             $ret += $unit->bombardStrength();
