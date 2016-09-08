@@ -61,6 +61,7 @@ class Army extends Unit{
 // Классы Archer и LaserCannon - это листья, предназначены для того что бы
 // поддерживать операции с объектами типа Unit, и в них не могут содержатся другие объекты типа Unit
 
+
 $army = new Army();
 $army->addUnit(new Archer());
 $army->addUnit(new LaserCannonUnit());
