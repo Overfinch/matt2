@@ -30,11 +30,14 @@ class Army extends Unit{ // композит который может в себ
     private $armies = [];
 
     function addUnit(Unit $unit){ // добавление объекта типа Unit
-        array_push($this->units, $unit);
+        if(in_array($unit, $this->units, true)){
+            return;
+        }
+        $this->units[] = $unit;
     }
 
     function removeUnit(Unit $unit){ // удаление объекта типа Unit
-        $this->units = array_udiff($this->units, [$unit], function($a,$b){return ($a === $b)?0:1; });
+        $this->units = array_udiff($this->units, [$unit], function($a,$b){ return ($a === $b)?0:1; });
     }
 
     function addArmy(Army $army){ // добавление объекта типа Army
@@ -61,8 +64,10 @@ class Army extends Unit{ // композит который может в себ
 // Классы Archer и LaserCannon - это листья, предназначены для того что бы
 // поддерживать операции с объектами типа Unit, и в них не могут содержатся другие объекты типа Unit
 
+$archer1 = new Archer();
+$LaserCannonUnit1 = new LaserCannonUnit();
 
 $army = new Army();
-$army->addUnit(new Archer());
-$army->addUnit(new LaserCannonUnit());
+$army->addUnit($archer1);
+$army->addUnit($LaserCannonUnit1);
 print $army->bombardStrength();
