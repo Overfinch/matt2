@@ -10,15 +10,30 @@ abstract class Unit {
     }
 
     abstract function bombardStrength();
+}
 
-    function addUnit(Unit $unit){
-        throw new UnitException(self::class.' относится к листьям');
+abstract class CompositeUnit extends Unit {
+    private $units = [];
+
+    function getComposite(){ // возвращает сам себя для того что бы определить что это композит, и дальше взаимодействовать с ним
+        return $this;
     }
-    function removeUnit(Unit $unit){
-        throw new UnitException(self::class.' относится к листьям');
+
+    function units(){
+        return $this->units;
     }
-    // исключения на случай если к "листьям" попробуют добавить или удалить что-то
-    // а для "композитов" будут обьявлены рабочие методы addUnit и removeUnit
+
+    function addUnit(Unit $unit){ // добавление объекта типа Unit
+        if(in_array($unit, $this->units, true)){
+            echo "этот юнит уже есть в массиве";
+            return;
+        }
+        $this->units[] = $unit;
+    }
+
+    function removeUnit(Unit $unit){ // удаление объекта типа Unit
+        $this->units = array_udiff($this->units, [$unit], function($a,$b){ return ($a === $b)?0:1; });
+    }
 }
 
 class Archer extends Unit { // листья
@@ -33,26 +48,33 @@ class LaserCannonUnit extends Unit { // листья
     }
 }
 
-class Army extends Unit{ // композит который может в себе объекты типа Unit
-    private $units = [];
-
-    function addUnit(Unit $unit){ // добавление объекта типа Unit
-        if(in_array($unit, $this->units, true)){
-            return;
-        }
-        $this->units[] = $unit;
-    }
-
-    function removeUnit(Unit $unit){ // удаление объекта типа Unit
-        $this->units = array_udiff($this->units, [$unit], function($a,$b){ return ($a === $b)?0:1; });
-    }
+class Army extends CompositeUnit { // композит который может в себе объекты типа Uni
 
     function bombardStrength(){ // возвращает силу всех Unit и Army объектов, которые находятся в нём
         $ret = 0;
-        foreach ($this->units as $unit){
+        foreach ($this->units() as $unit){
             $ret += $unit->bombardStrength();
         }
         return $ret;
+    }
+}
+
+// Методу joinExisting() передаются два объекта типа Unit.
+// Первый- это объект, вновь прибывший на клетку,
+// а второй - объект. который занимал клетку до этого.
+// Если второй объект типа Unit принадлежит к клaccy CompositeUnit,
+// то первый объект попытается присоединиться к нему. Если нет,
+// то будет создан новый объект типаАrmу, включающий оба объекта типа Unit.
+class UnitScript {
+    static function joinExisting(Unit $newUnit, Unit $occupyingUnit){
+        if(! is_null($comp = $occupyingUnit->getComposite())){
+            $comp->addUnit($newUnit);
+        }else{
+            $comp = new Army();
+            $comp->addUnit($occupyingUnit);
+            $comp->addUnit($newUnit);
+        }
+        return $comp;
     }
 }
 
@@ -81,3 +103,11 @@ $main_army->addUnit($sub_army);
 
 // Все вычисления выполняются за кулисами
 print $main_army->bombardStrength();
+echo "<hr>";
+
+
+// Тут имитируем ситуацию когда $main_army был в клетке и в неё пришел ещё new Archer()
+// joinExisting() определил что $main_army это композит и добавил к нему new Archer()
+// и вернул ТОТ ЖЕ объект(не создавал новый) типа Army ($main_army)
+$new_army = UnitScript::joinExisting(new Archer(),$main_army);
+print $new_army->bombardStrength();
