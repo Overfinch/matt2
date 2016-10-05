@@ -4,6 +4,11 @@
 class UnitException extends Exception {}
 
 abstract class Unit {
+
+    function getComposite(){ // указывает что это не композит, а листья
+        return null;
+    }
+
     abstract function bombardStrength();
 
     function addUnit(Unit $unit){
