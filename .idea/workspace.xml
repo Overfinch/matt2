@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6a5017d5-120e-4195-b2eb-d72adcdd5f32" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test5.php" afterPath="$PROJECT_DIR$/test5.php" />
     </list>
     <ignored path="matt2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,14 +31,14 @@
     <favorites_list name="matt2" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="test5.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test5.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+            <state relative-caret-position="699">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
-                <marker date="1483305558628" expanded="true" signature="754:768" ph="..." />
+                <marker date="1483385571642" expanded="true" signature="754:768" ph="..." />
               </folding>
             </state>
           </provider>
@@ -172,8 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,6 +187,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,6 +338,7 @@
       <workItem from="1483381199191" duration="736000" />
       <workItem from="1483382288861" duration="67000" />
       <workItem from="1483384402354" duration="91000" />
+      <workItem from="1483385547224" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="Тестовый коммит с PhpStorm`a">
       <created>1472483079113</created>
@@ -377,7 +379,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119386000" />
+    <option name="totallyTimeSpent" value="119411000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -746,10 +748,10 @@
     <entry file="file://$PROJECT_DIR$/../mvc/mvc/index.php" />
     <entry file="file://$PROJECT_DIR$/test5.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        <state relative-caret-position="699">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
-            <marker date="1483305558628" expanded="true" signature="754:768" ph="..." />
+            <marker date="1483385571642" expanded="true" signature="754:768" ph="..." />
           </folding>
         </state>
       </provider>
