@@ -1,11 +1,14 @@
 <?php
 
-function foo() {
-    static $a = 0;
-    echo $a;
-    $a = $a + 1;
+class Table {
+    public static $name = 'table';
+    public static function getName(){
+        return static::$name;
+    }
 }
 
-foo(); // 0
-foo(); // 1
-foo(); // 2
+class User extends Table {
+    public static $name = 'user';
+}
+
+print User::getName();
