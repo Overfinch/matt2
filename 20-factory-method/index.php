@@ -38,7 +38,7 @@ class MegaContactEncoder extends ContactEncoder {
 
 /*------------------------------------------------------------------------------*/
 
-abstract class CommsManager {
+abstract class CommsManager { // абстрактный класс фабрики
     abstract function getHeaderText();
     abstract function getFooterText();
     /* Здесь описан Factory Method (методы которые создадут экземпляры нужных классов) */
@@ -47,7 +47,7 @@ abstract class CommsManager {
     /*---------------------------------------------------------------------------------*/
 }
 
-class BlogsCommsManager extends CommsManager {
+class BlogsCommsManager extends CommsManager { // реализация одной из фабрик
     function getHeaderText(){
                 return "BlogsCall верхний колонтикул <br>";
     }
@@ -65,7 +65,7 @@ class BlogsCommsManager extends CommsManager {
     }
 }
 
-class MegaCommsManager extends CommsManager {
+class MegaCommsManager extends CommsManager { // реализация одной из фабрик
     function getHeaderText(){
         return "MegaCall верхний колонтикул <br>";
     }
