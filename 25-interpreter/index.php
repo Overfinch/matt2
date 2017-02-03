@@ -1,7 +1,7 @@
 <?php
 
 abstract class Expression { // абстрактный класс всех эллементов
-    private static $keycount = 0; // статичное свойство, не обнуляется, это счетчик
+    private static $keycount = 0; // статичное свойство, не обнуляется, оно общае для всех объектов которые наследуют это класс
     private $key;
 
     abstract function interpret(InterpreterContext $context); // взаимодействие с InterpreterContext (хранилищем данных)
