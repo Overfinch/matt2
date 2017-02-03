@@ -1,7 +1,7 @@
 <?php
 
 abstract class Expression { // абстрактный класс всех эллементов
-    private static $keycount = 0;
+    private static $keycount = 0; // статичное свойство, не обнуляется, это счетчик
     private $key;
 
     abstract function interpret(InterpreterContext $context); // взаимодействие с InterpreterContext (хранилищем данных)
@@ -113,7 +113,6 @@ foreach (['четыре','4', '42'] as $val){ // массив со значен�
     $input->setValue($val); //перебераем массив
     print $val."<br>";
     $statement->interpret($context);
-    var_dump($context);
     if ($context->lookup($statement)){ // возвращает булевый ответ на логическую операцию сравнения
         print "Соответствует <hr>";
     }else{
