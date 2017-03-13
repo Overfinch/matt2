@@ -31,7 +31,6 @@ abstract class LoginObserver implements Observer {
 
 class Login  implements Observable { // объект за которым будут наблюдать наблюдатели
     private $observers = [];
-    private $storage;
 
     const LOGIN_USER_UNKNOWN = 1;
     const LOGIN_WRONG_PASS = 2;

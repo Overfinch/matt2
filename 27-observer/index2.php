@@ -23,7 +23,6 @@ abstract class LoginObserver implements SplObserver {
 }
 
 class Login  implements SplSubject { // объект за которым будут наблюдать наблюдатели
-    private $observers = [];
     private $storage;
 
     const LOGIN_USER_UNKNOWN = 1;
@@ -32,23 +31,19 @@ class Login  implements SplSubject { // объект за которым буд�
     private $status = [];
 
     function __construct(){
-        $this->observers = [];
+        $this->storage = new SplObjectStorage();
     }
 
     function attach(SplObserver $observer){ // прикрепляем наблюдателя к объекту
-        $this->observers[] = $observer;
+        $this->storage->attach($observer);
     }
 
     function detach(SplObserver $observer){ // открепляем наблюдателья от объекта
-        $this->observers = array_filter($this->observers,
-            function ($a) use ($observer){
-                return(!($a === $observer));
-            }
-        );
+        $this->storage->detach($observer);
     }
 
     function notify(){ // вызываем метод update() у всех наблюдателей
-        foreach ($this->observers as $obs){
+        foreach ($this->storage as $obs){
             $obs->update($this);
         }
     }
